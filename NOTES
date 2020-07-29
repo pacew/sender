@@ -1,0 +1,36 @@
+C-e paste mode
+
+https://micropython.org/download/esp32/
+
+hold boot button
+make erase-flash
+
+make flash-python
+
+python3 -m esptool 
+
+
+
+https://randomnerdtutorials.com/esp32-adc-analog-read-arduino-ide/
+https://wiki.keyestudio.com/KS0413_keyestudio_ESP32_Core_Board
+https://drive.google.com/open?id=1qZ8MGRd-KwlD4wXACALr3P6Vc-4Xib2N
+
+
+
+
+
+pip3 install adafruit-ampy
+
+
+original boot.py:
+# This file is executed on every boot (including wake-boot from deepsleep)
+#import esp
+#esp.osdebug(None)
+#import webrepl
+#webrepl.start()
+
+Pins 0.. 39, except
+illegal pins: 20, 24, 28, 29, 30, 31,
+
+adc pins: 32 .. 39 inclusive
+
